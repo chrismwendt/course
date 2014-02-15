@@ -72,8 +72,8 @@ headOr ::
   a
   -> List a
   -> a
-headOr =
-  error "todo"
+headOr d Nil = d
+headOr _ (h:._) = h
 
 -- | The product of the elements of a list.
 --
