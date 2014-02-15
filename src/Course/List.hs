@@ -99,8 +99,7 @@ product = foldRight (*) 1
 sum ::
   List Int
   -> Int
-sum =
-  error "todo"
+sum = foldRight (+) 0
 
 -- | Return the length of the list.
 --
