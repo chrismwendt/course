@@ -125,8 +125,8 @@ map ::
   (a -> b)
   -> List a
   -> List b
-map =
-  error "todo"
+map _ Nil = Nil
+map f (a:.as) = f a :. map f as
 
 -- | Return elements satisfying the given predicate.
 --
