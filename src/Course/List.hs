@@ -111,7 +111,7 @@ length ::
   List a
   -> Int
 length Nil = 0
-length (_:.l) = 1 + length l
+length (_:.as) = 1 + length as
 
 -- | Map the given function on each element of the list.
 --
